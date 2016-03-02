@@ -49,14 +49,10 @@ h1 {
     text-transform: uppercase;
 }
 
-h2 {
-    font-size: 1.8em;
-    text-align: left;
-    color: #9c005D;
-}
+h2 {}
 
 h3 {
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 h4 {}
@@ -77,9 +73,17 @@ form {
     padding: 5%;
 }
 
-textarea:focus,input:focus {
-    outline:none;
-    border:1px solid #9c005d;
+legend {
+    font-weight: 600;
+    font-size: 1.8em;
+    text-align: left;
+    color: #9c005D;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+    border: 1px solid #9c005d;
     background-color: #FFF0F9;
 }
 
@@ -94,12 +98,19 @@ fieldset h3 {
 
 label {
     margin-top: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+label[type="radio"],
+label[type="checkbox"] {
+    font-weight: 300;
 }
 
 label,
 input {
     display: inline-block;
-    padding: 10px 0 5px 0;
+    padding: 10px 0 10px 0;
     background-color: #fafafa;
 }
 
@@ -119,6 +130,7 @@ input[type="radio"] + label {
     display: inline-block;
     width: 90%;
     clear: both;
+    font-weight: 300;
 }
 
 input[type="checkbox"] {
@@ -129,6 +141,7 @@ input[type="checkbox"] {
 input[type="checkbox"] + label {
     display: inline-block;
     width: 90%;
+    font-weight: 300;
 }
 
 textarea {
@@ -136,7 +149,6 @@ textarea {
     border: 1px solid lightgray;
     background-color: white;
 }
-
 
 input[type="submit"] {
     display: block;
